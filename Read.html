@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+
+    <title>BlockChain</title>
+</head>
+
+<body>
+    <div>
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"
+            style="padding: 0px; margin: 0px; border-bottom: 3px solid transparent;">
+            <div class="container-fluid navbar navbar-light" style="background-color: 	#FFFFFF;">
+                <a class="navbar-brand" href="#">BLOGGER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/About.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Technology</a></li>
+                                <li><a class="dropdown-item" href="#">Programming</a></li>
+                                <li><a class="dropdown-item" href="#">SEO Optimization</a></li>
+                                <li><a class="dropdown-item" href="#">Internet</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Contact.html">Contact</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">
+                            Search
+                        </button>
+                    </form>
+                    <div style="margin-left: 7px; margin-top: 3px;">
+                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#signupModal">Sign Up </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end-->
+        <!-- modal login start -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal login end -->
+        <!-- modal Sign Up start -->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4 position-relative">
+                                <label for="validationTooltip01" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="validationTooltip01" required>
+                                <div class="valid-tooltip">
+                                </div>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                                <label for="validationTooltip02" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="validationTooltip02" required>
+                                <div class="valid-tooltip">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="SexampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="SexampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="SCexampleInputPassword1">
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal Sign Up end -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="margin-top: 50px;">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title">Block Chain</h2>
+                        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+
+                        <p>With all the fuss going on about “blockchain technology” and “cryptocurrencies” in the IT
+                            industry and the general market as a whole, it has almost become impossible to turn a blind
+                            eye. People have taken to investing into these cryptocurrencies without knowing how they
+                            work. So, I decided to write this comprehensive blog on “what is blockchain” where I’ll
+                            explain the concepts underlying this revolutionary technology.</p>
+                        <hr>
+                        <p>Simply put blockchain is a permanent record of <strong>“who holds what”</strong>. Advanced
+                            cryptography in
+                            conjunction with computer science ensures that nobody can change these records without
+                            anyone knowing. Once information is added to the blockchain it is impossible to remove it
+                            from there! Thus due to its immutable nature, the blockchain serves as a trustworthy
+                            database of information which anybody can check at any time. This allows strangers to trust
+                            the validity of transaction without having the need of trusting each other.</p>
+                        <h4>Problems Solved by Blockchain Technology</h4>
+                        <p>Blockchain technology’s breakthrough was so revolutionary, that it provided a solution to the
+                            double spending problem which has plagued our financial system since its dawn. Digital money
+                            (like Bitcoin) is just like a simple computer file. so it would be easy for somebody to just
+                            “counterfeit” it by copy and paste it into a different system. Before blockchain, the
+                            solution was for banks to keep track of the money in everybody’s accounts so that nobody
+                            could spend money twice. What the blockchain does it make these “transaction books” or
+                            ledgers public so that everybody can verify that nobody is spending more than what they
+                            have!Aside from addressing the double spending problem, blockchain technology also
+                            completely disregards the middle-men involved and directly executes transactions by
+                            connecting affiliated peers. Not needing a third party (like a bank) to handle accounts and
+                            transactions has a lot of benefits:</p>
+                        <ul>
+                            <li>Transactions can be faster and cheaper since there is no middleman</li>
+                            <li>Plus, your personal information becomes more private since no bank has to store it.</li>
+                        </ul>
+                        <h4>How does Blockchain work?</h4>
+                        <p>Now that we understand why blockchain was invented and what kind of problems it solves, let’s
+                            take a broader look at how exactly it solves these problems.
+                        </p>
+                        <p>For this, let’s imagine a scenario where there are four strangers in a room sitting at a
+                            table.
+                            Each person has a notebook in his hand. </p>
+                        <ol>
+                            <li>Strangers are analogous to the participants of the network</li>
+                            <li>Notebooks are analogous to the transaction list (ledger) maintained by the participants
+                                of
+                                the blockchain</li>
+                        </ol>
+                        <img src="/blog-1img1.png" class="img-fluid" alt="blockchain" style="margin-bottom: 15px;">
+                        <p>This technology works exactly like the notebook example. Each user has an identical copy of
+                            the blockchain “notebook” which publicly records all transactions. All notebooks get
+                            constantly compared to make sure they match. Additionally, the blockchain stores all past
+                            transactions permanently so that there is a record of where all digital property (like
+                            Bitcoin) currently is. This proves who owns what. In short, this technology knows where all
+                            digital property recorded on it is at all times. This is very powerful since it proves
+                            ownership without needing a third party.</p>
+                        <h4>Future of Blockchain Technology</h4>
+                        <p>Blockchain technology can be used to remove the middle-men and centralized third parties that
+                            handle transactions in various industries. This may result in lost jobs in the future but
+                            the pros heavily outweigh the cons. Let’s take a look at a few industries that it promises
+                            to drastically change.</p>
+                        <p><strong> Entertainment Industry</strong> – With blockchain implemented in the entertainment
+                            industry,
+                            people could directly pay authors and artists without the need of record label or third
+                            party firm handling them. At this moment services like Spotify and Amazon take 95% of artist
+                            revenue. </p>
+                        <p><strong>International Payment</strong> – With blockchain, international payments by
+                            individuals and companies become cheap, fast, and secure. Blockchain technology can
+                            automatically ensure that money changes hands fairly, and since it removes the middle-men
+                            too transaction costs become cheaper too </p>
+                        <p>If you wish to learn Blockchain and build a career in this field, then check out our
+                        <i>Certification Training </i>which comes with instructor-led live training and real-life project
+                            experience. This training will help you understand the technology in an extensive manner and
+                            help you achieve mastery over the subject.</p>
+                            <p> Thank You.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- side panel end -->
+    <!-- footer start -->
+    <footer class="blog-footer" style="margin-top: 50px;">
+        <p class="text-center">Created by <a href="#">Hatshid Khunt</a>. | © 2021 All the Rights Reserved</p>
+        <p class="text-center">
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+    <!-- footer end -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+-->
+</body>
+
+</html>
